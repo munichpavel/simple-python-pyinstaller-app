@@ -98,3 +98,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# my notes
+notes.md
