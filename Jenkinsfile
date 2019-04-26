@@ -8,7 +8,6 @@ pipeline {
                 }
             }
             steps {
-                echo "wassup"
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py' 
             }
         }
