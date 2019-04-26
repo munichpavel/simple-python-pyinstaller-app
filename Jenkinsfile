@@ -4,10 +4,11 @@ pipeline {
         stage('Build') { 
             agent {
                 docker {
-                    image 'python:3-alpine' 
+                    image 'python:42-alpine' 
                 }
             }
             steps {
+                echo "wassup"
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py' 
             }
         }
